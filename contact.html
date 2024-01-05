@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("form").submit(function(event) {
+          event.preventDefault();
+          $("#success-message").fadeIn();
+        });
+      });
+    </script>
+    <style>
+     
+      #success-message {
+        display: none;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject"><br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br><br>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="success-message">Thank you for contacting us!</div>
+    </main>
+  </body>
+</html>

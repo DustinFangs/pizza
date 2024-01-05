@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Page</title>
+	<link rel ="stylesheet" href ="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel ="stylesheet" href ="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src ="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https//code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src ="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	
+
+	
+<script>
+$(document).ready(function() {
+	
+	$(".accordion h3").click(function() {
+	$(this).next().slideToggle();
+	$(this).toggleClass("active");
+	});
+
+});
+	</script>
+	<style>
+			.accordion div{
+			
+			display: none;
+		}
+
+		.accordion h3{
+			cursor: pointer;
+		}
+
+		.accordion h3.active{
+			background-color: #ccc;
+		}
+
+		
+	</style>
+	</head>
+	
+  <body>
+  
+    <header>
+      <h1>Interactive Web Page</h1>
+    </header>
+	
+	
+    <main>
+      <section class="accordion-section">
+        <h2>Accordion</h2>
+        <div class="accordion">
+		
+          <h3>Section 1</h3>
+          <div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus faucibus risus, tristique varius felis ultrices nec. In consequat varius lorem, in pharetra turpis dapibus pulvinar. In tempor lorem sit amet tellus ornare, eu aliquam lorem gravida. Morbi sit amet erat sed mauris aliquet commodo. Etiam condimentum lorem in dolor feugiat, varius scelerisque magna elementum. Duis dignissim faucibus felis nec ullamcorper. Donec arcu dolor, consectetur nec lorem vitae, ultrices scelerisque magna. Cras iaculis ornare pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin dignissim varius congue. Nam turpis est, porttitor blandit semper lacinia, iaculis viverra quam. Vivamus eget scelerisque mi, et aliquam nunc. Proin augue est, iaculis quis tempor id, consequat in tortor. Fusce quis neque ac purus semper ultricies. Pellentesque non nunc tellus. Vestibulum maximus rutrum massa, eget iaculis nisl iaculis sed.</p>
+  </div>
+  
+  <h3>Section 2</h3>
+  <div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus faucibus risus, tristique varius felis ultrices nec. In consequat varius lorem, in pharetra turpis dapibus pulvinar. In tempor lorem sit amet tellus ornare, eu aliquam lorem gravida. Morbi sit amet erat sed mauris aliquet commodo. Etiam condimentum lorem in dolor feugiat, varius scelerisque magna elementum. Duis dignissim faucibus felis nec ullamcorper. Donec arcu dolor, consectetur nec lorem vitae, ultrices scelerisque magna. Cras iaculis ornare pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin dignissim varius congue. Nam turpis est, porttitor blandit semper lacinia, iaculis viverra quam. Vivamus eget scelerisque mi, et aliquam nunc. Proin augue est, iaculis quis tempor id, consequat in tortor. Fusce quis neque ac purus semper ultricies. Pellentesque non nunc tellus. Vestibulum maximus rutrum massa, eget iaculis nisl iaculis sed.</p>
+  </div>
+  
+  <h3>Section 3</h3>
+  <div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus faucibus risus, tristique varius felis ultrices nec. In consequat varius lorem, in pharetra turpis dapibus pulvinar. In tempor lorem sit amet tellus ornare, eu aliquam lorem gravida. Morbi sit amet erat sed mauris aliquet commodo. Etiam condimentum lorem in dolor feugiat, varius scelerisque magna elementum. Duis dignissim faucibus felis nec ullamcorper. Donec arcu dolor, consectetur nec lorem vitae, ultrices scelerisque magna. Cras iaculis ornare pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin dignissim varius congue. Nam turpis est, porttitor blandit semper lacinia, iaculis viverra quam. Vivamus eget scelerisque mi, et aliquam nunc. Proin augue est, iaculis quis tempor id, consequat in tortor. Fusce quis neque ac purus semper ultricies. Pellentesque non nunc tellus. Vestibulum maximus rutrum massa, eget iaculis nisl iaculis sed.</p>
+  </div>
+</div>
+</section>
+<section class="slider-section">
+<h2>Image Slider</h2>
+<div class="slider">
+  <img src="images/image1.jpg" alt="Image 1">
+  <img src="images/image2.jpg" alt="Image 2">
+  <img src="images/image3.jpg" alt="Image 3">
+  <img src="images/image4.jpg" alt="Image 4">
+</div>
+</section>
+</main>
+
+<button onclick="window.location.href=contact.html">Contact</button>
+</body>
+</html>
